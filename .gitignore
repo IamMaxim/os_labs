@@ -1,0 +1,5 @@
+# Initial .gitignore file to exclude C/C++ unnecessary stuff.
+
+**/CMakeLists.txt
+cmake-build-debug/
+

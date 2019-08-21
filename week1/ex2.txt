@@ -1,0 +1,16 @@
+  999  exit
+ 1000  turnOffNvidia.sh
+ 1001  clear
+ 1002  cd OS_labs
+ 1003  nvim createFile
+ 1004  nvim list_gcc.sh
+ 1005  ls --help
+ 1006  ls /usr/bin | grep gcc
+ 1007  ls --reverse /usr/bin | grep gcc 
+ 1008  mkdir week1
+ 1009  cd week1
+ 1010  ls --reverse /usr/bin | grep gcc > ex1.txt
+ 1011  cat ex1.txt
+ 1012  history
+ 1013  clear
+ 1014  history
