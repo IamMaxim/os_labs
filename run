@@ -1,0 +1,23 @@
+#!/bin/bash
+
+export COLOR_BLUE="\033[0;94m"
+export COLOR_NONE="\033[0m"
+export COLOR_RED="\033[0;91m"
+export COLOR_GREEN="\033[0;32m"
+
+
+echo -e "${COLOR_BLUE}Compiling file \"${1}\"${COLOR_NONE}"
+if ! gcc "$1" -o "${1}.out"; then
+    echo -e "${COLOR_RED}Compilation failed${COLOR_NONE}"
+else
+    echo -e "${COLOR_GREEN}Compilation succeeded. Running...${COLOR_NONE}"
+    
+    "./${1}.out" "${@:2}"
+    last_exit_code=$?
+
+    if [ $last_exit_code != 0 ]; then
+        echo -e "${COLOR_RED}Program exitted with code ${last_exit_code}${COLOR_NONE}"
+    else
+        echo -e "${COLOR_GREEN}Program exitted with code ${last_exit_code}${COLOR_NONE}"
+    fi
+fi
