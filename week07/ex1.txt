@@ -1,0 +1,14 @@
+Segment __PAGEZERO: 4294967296
+Segment __TEXT: 4096
+	Section __text: 52
+	Section __stubs: 6
+	Section __stub_helper: 26
+	Section __cstring: 22
+	Section __unwind_info: 72
+	total 178
+Segment __DATA: 4096
+	Section __nl_symbol_ptr: 16
+	Section __la_symbol_ptr: 8
+	total 24
+Segment __LINKEDIT: 4096
+total 4294979584
