@@ -1,0 +1,9 @@
+memsize = 2^16 = 65 536                  | 65636
+pagesize = 8192 = 8 192                  | 8192
+entries_count = memsize / pagesize = 8   | 8
+
+
+To obtain the amount of entries needed to cover all memory space in pages,
+we need to divide size of address space by size of one page. Thus, we get
+the answer of 8.
+

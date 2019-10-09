@@ -1,0 +1,11 @@
+The physical address is an address in the RAM (in hardware). Kernel is
+responsible for managing physical memory, creating an abstraction for
+user-space processes, known as virtual memory.
+
+The virtual address is an address with respect to the process. Process doesn't
+have access to the physical addresses, it can only access its own virtual
+address space (unless this is some low-level software for working with RAM
+directly). Usually process can assume that virtual address space is much
+larger that physical address space, since kernel can swap pages of virtual
+memory to the disk.
+
