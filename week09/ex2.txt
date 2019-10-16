@@ -1,0 +1,12 @@
+Running a sequence
+    1 1 1 1 1 1 1 1 1 1 1 1 1 ...
+produces the increased hit/miss ratio, since we have only 1 miss (the first
+memory access). All other operations use the loaded page.
+
+
+Running a sequence
+    1 2 3 4 5 6 7 8 9 10 11 12 13 14 ...
+produces the decreased hit/miss ratio, since all of memory access operations
+give a miss (since each new operation request a page that does not exist in
+the memory yet).
+
