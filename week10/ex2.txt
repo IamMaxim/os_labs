@@ -1,0 +1,21 @@
+$> link ../week01/file.txt _ex2.txt
+             <nothing>
+
+$> ls -i
+total 40
+4434673 drwxr-xr-x   8 maxim  staff   256B Oct 23 14:35 .
+1525438 drwxr-xr-x  17 maxim  staff   544B Oct 23 14:34 ..
+4434763 -rw-r--r--   3 maxim  staff    39B Oct 23 14:16 _ex1.txt
+4434763 -rw-r--r--   3 maxim  staff    39B Oct 23 14:16 _ex1_1.txt
+4434763 -rw-r--r--   3 maxim  staff    39B Oct 23 14:16 _ex1_2.txt
+4435354 -rw-r--r--   2 maxim  staff    85B Oct 23 14:33 _ex2.txt
+4434920 -rw-r--r--   1 maxim  staff   389B Oct 23 14:17 ex1.txt
+4435575 -rw-r--r--   1 maxim  staff     0B Oct 23 14:35 ex2.txt
+
+$> find .. -inum 4435354
+../week01/file.txt
+../week10/_ex2.txt
+
+$> find .. -inum 4435354 -exec rm {};
+            <nothing>
+

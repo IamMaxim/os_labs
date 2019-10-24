@@ -1,0 +1,7 @@
+total 24
+4434673 drwxr-xr-x   6 maxim  staff   192B Oct 23 14:17 .
+1525438 drwxr-xr-x  17 maxim  staff   544B Oct 23 14:17 ..
+4434763 -rw-r--r--   3 maxim  staff    39B Oct 23 14:16 _ex1.txt
+4434763 -rw-r--r--   3 maxim  staff    39B Oct 23 14:16 _ex1_1.txt
+4434763 -rw-r--r--   3 maxim  staff    39B Oct 23 14:16 _ex1_2.txt
+4434920 -rw-r--r--   1 maxim  staff     0B Oct 23 14:17 ex1.txt
