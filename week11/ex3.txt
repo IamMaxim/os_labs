@@ -1,0 +1,14 @@
+In this exercise we can see a line-buffered stdout.
+
+The thing is that the buffer is stored in the process, and when we fork a
+process, we also create a copy of the buffer.
+
+In the first program, we first write "hello" to the buffer, then do the fork
+(with "hello" in the buffer), and then write "\n" in 2 processes. As the
+result, two buffers "hello\n" are printed.
+
+In the second program, we first write "hello\n" to the buffer, as the "\n" is
+met, result is printed and buffer is erased. Then the process is forked and
+two "\n" are printed.
+
+
